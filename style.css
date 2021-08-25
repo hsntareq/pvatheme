@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*
+Theme Name: PVA Theme
+Theme URI: https://pva.org/
+Author: Hasan Tareq
+Author URI: https://pva.org/
+Description: PVA Theme is a blank canvas for your ideas and it makes the block editor your best brush. With new block patterns, which allow you to create a beautiful layout in a matter of seconds, this theme’s soft colors and eye-catching — yet timeless — design will let your work shine. Take it for a spin! See how PVA Theme elevates your portfolio, business website, or personal blog.
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pvatheme
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
+Twenty Twenty-One is distributed under the terms of the GNU GPL.
+*/
+:root {
+  --dark--background: #121d24;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.titillium,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", sans-serif;
+}
+.font-600 {
+  font-weight: 600 !important;
+}
+.font-400 {
+  font-weight: 400 !important;
+}
+.font-300 {
+  font-weight: 300 !important;
+}
+nav {
+  background-color: var(--dark--background);
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+nav li a:hover {
+  color: darkblue;
+  background-color: #fff;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+.content-area {
+  min-height: 350px;
+}
+.footer-top {
+  background-color: #182f3f;
+}
+.footer-bottom {
+  background-color: var(--dark--background);
+}
+footer ul {
+  list-style: none;
+}
+footer,
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.wppb-row-parent > .wppb-container {
+  margin: 0;
+  padding: 0 !important;
+  min-width: 100%;
+}
+.wppb-container > .wppb-row {
+  min-width: 100%;
+}
