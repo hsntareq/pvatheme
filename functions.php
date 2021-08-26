@@ -29,6 +29,7 @@ function widget_registration($name, $id, $description, $beforeWidget, $afterWidg
 }
 
 function multiple_widget_init() {
+    widget_registration('Header Right', 'header-right', 'test', '', '', '', '');
     widget_registration('Footer Before 1', 'footer-before-1', 'test', '', '', '', '');
     widget_registration('Footer Before 2', 'footer-before-2', 'test', '', '', '', '');
     widget_registration('Footer Before 3', 'footer-before-3', 'test', '', '', '', '');
@@ -39,3 +40,8 @@ function multiple_widget_init() {
 }
 
 add_action('widgets_init', 'multiple_widget_init');
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

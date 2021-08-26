@@ -22,8 +22,9 @@
 						<img width="120" src="<?php echo THEME_DIR . '/images/logo.png' ?>"></a>
 				</div>
 				<div class="header-right d-block titillium">
-					<a class="btn btn-primary btn-lg text-uppercase font-600" href="#">Contact Us</a>
-					<a class="btn btn-danger btn-lg text-uppercase font-600" href="#">Donate Now</a>
+					<?php if (is_active_sidebar('header-right')) { ?>
+						<?php dynamic_sidebar('header-right'); ?>
+					<?php } ?>
 				</div>
 			</div>
 		</div>
